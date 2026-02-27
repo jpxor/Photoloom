@@ -1,0 +1,75 @@
+{{ define "main" }}
+<section class="browse-section">
+    <h1>Browse Photos</h1>
+    <div class="browse-grid">
+        <a href="{{ "albums" | relURL }}" class="browse-card">
+            <div class="browse-icon">📁</div>
+            <h2>By Folder</h2>
+            <p>Explore albums by directory</p>
+        </a>
+        <a href="{{ "categories" | relURL }}" class="browse-card">
+            <div class="browse-icon">🏷️</div>
+            <h2>By Category</h2>
+            <p>Landscape, portrait, urban...</p>
+        </a>
+        <a href="{{ "colors" | relURL }}" class="browse-card">
+            <div class="browse-icon">🎨</div>
+            <h2>By Color</h2>
+            <p>Red, blue, green...</p>
+        </a>
+        <a href="{{ "tags" | relURL }}" class="browse-card">
+            <div class="browse-icon">🏷️</div>
+            <h2>By Tag</h2>
+            <p>Sunset, mountains, people...</p>
+        </a>
+    </div>
+</section>
+
+{{ $recentAlbums := where .Site.RegularPages "Type" "album" }}
+{{ if gt (len $recentAlbums) 0 }}
+<section class="albums-grid">
+    <h2>Albums</h2>
+    <div class="grid">
+        {{ range first 6 $recentAlbums }}
+        <a href="{{ .Permalink }}" class="album-card">
+            {{ with .Params.cover }}
+            <div class="album-cover">
+                {{ $coverImage := resources.Get . }}
+                {{ with $coverImage }}
+                    {{ $resized := .Resize "400x webp q80" }}
+                    <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="album-info">
+                <h3>{{ .Title }}</h3>
+                {{ $albumSlug := lower (replace .Title " " "-") }}
+                {{ $photoCount := len (where (where $.Site.RegularPages "Type" "photo") "Params.album" $albumSlug) }}
+                <span class="photo-count">{{ $photoCount }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $recentPhotos := where .Site.RegularPages "Type" "photo" }}
+{{ if gt (len $recentPhotos) 0 }}
+<section class="recent-photos">
+    <h2>Recent Photos</h2>
+    <div class="photo-grid">
+        {{ range first 12 $recentPhotos }}
+        <a href="{{ .Permalink }}" class="photo-card">
+            {{ with .Params.image }}
+                {{ $img := resources.Get . }}
+                {{ with $img }}
+                    {{ $thumb := .Resize "400x webp q80" }}
+                    <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+                {{ end }}
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}

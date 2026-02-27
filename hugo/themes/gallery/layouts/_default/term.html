@@ -1,0 +1,117 @@
+{{ define "main" }}
+{{ $isTag := in .Permalink "/tags/" }}
+{{ $isColor := in .Permalink "/colors/" }}
+{{ $taxonomy := "category" }}
+{{ if $isTag }}{{ $taxonomy = "tag" }}{{ else if $isColor }}{{ $taxonomy = "color" }}{{ end }}
+{{ $term := .Title }}
+
+{{ $isTermPage := .Pages }}
+
+<section class="page-header">
+    <div>
+        <h1>{{ .Title }}</h1>
+        <p>{{ len .Pages }} photos</p>
+    </div>
+    <button class="slideshow-btn" data-taxonomy="{{ $taxonomy }}" data-term="{{ $term | urlize }}" title="View as slideshow">
+        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        Slideshow
+    </button>
+</section>
+
+{{ if not $isTermPage }}
+{{ if $isTag }}
+{{ if gt (len .Data.Terms) 0 }}
+{{ $maxCount := len (index .Data.Terms.ByCount 0).Pages }}
+<section class="tag-cloud">
+    {{ range .Data.Terms.ByCount }}
+        {{ $count := len .Pages }}
+        {{ $sizeFloat := mul (div (float $count) (float $maxCount)) 2.2 }}
+        {{ $fontSize := add 0.8 $sizeFloat }}
+        <a href="{{ .Page.RelPermalink }}" class="tag-item" style="font-size: {{ $fontSize }}rem">
+            {{ .Page.Title }} <span class="tag-count">({{ $count }})</span>
+        </a>
+    {{ end }}
+</section>
+{{ end }}
+{{ else if $isColor }}
+{{ if gt (len .Data.Terms) 0 }}
+{{ $maxCount := len (index .Data.Terms.ByCount 0).Pages }}
+<section class="color-grid">
+    <div class="grid">
+        {{ range .Data.Terms.ByCount }}
+        <a href="{{ "colors" | relURL }}/{{ .Page.Title | urlize }}" class="color-card">
+            <div class="color-group-gradient">
+                {{ $groupName := .Page.Title }}
+                {{ $groupColors := slice }}
+                {{ range first 4 .Pages }}
+                    {{ $photoColors := .Params.colorGroupColors }}
+                    {{ with $photoColors }}
+                        {{ $color := index $photoColors $groupName }}
+                        {{ if $color }}
+                            {{ $groupColors = $groupColors | append $color }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{ if gt (len $groupColors) 0 }}
+                <div class="gradient-stripes" style="background: linear-gradient(135deg, {{ range $i, $c := $groupColors }}{{ if $i }}, {{ end }}{{ $c }}{{ end }});"></div>
+                {{ end }}
+            </div>
+            <div class="color-info">
+                <span class="color-name">{{ .Page.Title }}</span>
+                <span class="photo-count">{{ len .Pages }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ else }}
+{{ if gt (len .Data.Terms) 0 }}
+<section class="taxonomy-grid">
+    <div class="grid">
+        {{ range .Data.Terms.ByCount }}
+        <a href="{{ .Page.RelPermalink }}" class="taxonomy-card">
+            <div class="taxonomy-cover">
+                {{ $firstPhoto := index .Pages 0 }}
+                {{ with $firstPhoto.Params.image }}
+                    {{ $img := resources.Get . }}
+                    {{ with $img }}
+                        {{ $thumb := .Resize "400x webp q80" }}
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ $.Title }}">
+                    {{ end }}
+                {{ end }}
+            </div>
+            <div class="taxonomy-info">
+                <h3>{{ .Page.Title }}</h3>
+                <span class="photo-count">{{ len .Pages }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+
+<section class="photo-grid" data-taxonomy="{{ $taxonomy }}" data-term="{{ $term | urlize }}">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}?from={{ $taxonomy }}:{{ $term | urlize }}" class="photo-card" 
+       data-taxonomy="{{ $taxonomy }}" data-term="{{ $term | urlize }}" data-permalink="{{ .Permalink }}">
+        {{ with .Params.image }}
+            {{ $img := resources.Get . }}
+            {{ with $img }}
+                {{ $thumb := .Resize "400x webp q80" }}
+                {{ $full := .Resize "1600x webp q85" }}
+                <img src="{{ $thumb.RelPermalink }}" data-full-src="{{ $full.RelPermalink }}" alt="{{ .Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+            {{ end }}
+        {{ end }}
+        <div class="photo-overlay">
+            <span>{{ .Title }}</span>
+        </div>
+        <span class="photo-slideshow-icon" title="Open in slideshow">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </span>
+    </a>
+    {{ end }}
+</section>
+{{ end }}

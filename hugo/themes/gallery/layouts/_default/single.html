@@ -1,0 +1,290 @@
+{{ define "main" }}
+<article class="photo-detail">
+    <div class="photo-container">
+        {{ with .Params.image }}
+            {{ $img := resources.Get . }}
+            {{ with $img }}
+                {{ $resized := .Resize "1600x webp q85" }}
+                <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <aside class="photo-metadata">
+        <h1>{{ .Title }}</h1>
+        
+        {{ with .Params.categories }}
+        <div class="meta-item">
+            <span class="meta-label">Category</span>
+            <div class="tags">
+                {{ range . }}
+                <a href="{{ "categories" | relURL }}/{{ . | urlize }}?from=category:{{ . | urlize }}" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        {{ with .Params.tags }}
+        <div class="meta-item">
+            <span class="meta-label">Tags</span>
+            <div class="tags">
+                {{ range . }}
+                <a href="{{ "tags" | relURL }}/{{ . | urlize }}?from=tag:{{ . | urlize }}" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        {{ with .Params.specificColors }}
+        <div class="meta-item">
+            <span class="meta-label">Colors</span>
+            <div class="colors">
+                {{ range . }}
+                <a href="{{ "colors" | relURL }}/{{ . | urlize }}?from=color:{{ . | urlize }}" class="color-swatch" style="background-color: {{ . }}" title="{{ . }}"></a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        {{ with .Params.description }}
+        <div class="meta-item">
+            <span class="meta-label">Description</span>
+            <p class="meta-value">{{ . }}</p>
+        </div>
+        {{ end }}
+
+        {{ if or .Params.camera_make .Params.camera_model .Params.lens .Params.iso .Params.aperture .Params.shutter_speed .Params.focal_length }}
+        <div class="meta-item">
+            <span class="meta-label">Camera Details</span>
+            <div class="exif-data">
+                {{ with .Params.camera_make }}
+                <div class="exif-row">
+                    <span class="exif-label">Make</span>
+                    <span class="exif-value">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.camera_model }}
+                <div class="exif-row">
+                    <span class="exif-label">Model</span>
+                    <span class="exif-value">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.lens }}
+                <div class="exif-row">
+                    <span class="exif-label">Lens</span>
+                    <span class="exif-value">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.iso }}
+                <div class="exif-row">
+                    <span class="exif-label">ISO</span>
+                    <span class="exif-value">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.aperture }}
+                <div class="exif-row">
+                    <span class="exif-label">Aperture</span>
+                    <span class="exif-value">f/{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.shutter_speed }}
+                <div class="exif-row">
+                    <span class="exif-label">Shutter</span>
+                    <span class="exif-value">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .Params.focal_length }}
+                <div class="exif-row">
+                    <span class="exif-label">Focal Length</span>
+                    <span class="exif-value">{{ . }}mm</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        {{ with .Params.width }}
+        {{ with $.Params.height }}
+        <div class="meta-item">
+            <span class="meta-label">Dimensions</span>
+            <span class="meta-value">{{ . }} x {{ $.Params.width }}</span>
+        </div>
+        {{ end }}
+        {{ end }}
+    </aside>
+</article>
+
+{{ $currentPermalink := .Permalink }}
+
+<div id="context-nav">
+    {{ range $taxonomy, $terms := (dict "category" .Site.Taxonomies.categories "tag" .Site.Taxonomies.tags "color" .Site.Taxonomies.colors) }}
+        {{ $taxoName := $taxonomy }}
+        {{ $taxoPlural := $taxoName }}
+        {{ if eq $taxoName "category" }}{{ $taxoPlural = "categories" }}{{ end }}
+        {{ if eq $taxoName "tag" }}{{ $taxoPlural = "tags" }}{{ end }}
+        {{ if eq $taxoName "color" }}{{ $taxoPlural = "colors" }}{{ end }}
+        {{ range $termName, $pages := $terms }}
+            {{ $termPages := where $pages "Permalink" $currentPermalink }}
+            {{ if gt (len $termPages) 0 }}
+            <div class="context-nav-group" data-taxonomy="{{ $taxoName }}" data-term="{{ $termName | urlize }}" style="display: none;">
+                <nav class="photo-nav">
+                    {{ $sortedPages := sort $pages "Date" "desc" }}
+                    {{ range $index, $page := $sortedPages }}
+                        {{ if eq $page.Permalink $currentPermalink }}
+                            {{ if gt $index 0 }}
+                                {{ $prevPage := index $sortedPages (sub $index 1) }}
+                                <a href="{{ $prevPage.Permalink }}?from={{ $taxoName }}:{{ $termName | urlize }}" class="photo-nav-link prev">
+                                    <span>&larr; Previous</span>
+                                    {{ with $prevPage.Params.image }}
+                                        {{ $img := resources.Get . }}
+                                        {{ with $img }}
+                                            {{ $thumb := .Resize "100x" }}
+                                            <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">
+                                        {{ end }}
+                                    {{ end }}
+                                </a>
+                            {{ else }}
+                                <div class="photo-nav-placeholder"></div>
+                            {{ end }}
+                            <a href="{{ $taxoPlural | relURL }}/{{ $termName | urlize }}" class="context-nav-label-inline">{{ $taxoPlural }}: {{ $termName }}</a>
+                            {{ if lt $index (sub (len $sortedPages) 1) }}
+                                {{ $nextPage := index $sortedPages (add $index 1) }}
+                                <a href="{{ $nextPage.Permalink }}?from={{ $taxoName }}:{{ $termName | urlize }}" class="photo-nav-link next">
+                                    <span>Next &rarr;</span>
+                                    {{ with $nextPage.Params.image }}
+                                        {{ $img := resources.Get . }}
+                                        {{ with $img }}
+                                            {{ $thumb := .Resize "100x" }}
+                                            <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">
+                                        {{ end }}
+                                    {{ end }}
+                                </a>
+                            {{ else }}
+                                <div class="photo-nav-placeholder"></div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </nav>
+            </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
+
+<nav class="photo-nav album-nav">
+    <span class="nav-label">Album</span>
+    {{ $currentPermalink := .Permalink }}
+    {{ $currentAlbum := .Params.album }}
+    {{ if $currentAlbum }}
+        {{ $allPhotos := where .Site.RegularPages "Type" "photo" }}
+        {{ $albumPhotos := where $allPhotos "Params.album" $currentAlbum }}
+        {{ $sortedPhotos := sort $albumPhotos "Date" "desc" }}
+        {{ range $index, $page := $sortedPhotos }}
+            {{ if eq $page.Permalink $currentPermalink }}
+                {{ if gt $index 0 }}
+                    {{ $prevPage := index $sortedPhotos (sub $index 1) }}
+                    <a href="{{ $prevPage.Permalink }}" class="photo-nav-link prev">
+                        <span>&larr; Previous</span>
+                        {{ with $prevPage.Params.image }}
+                            {{ $img := resources.Get . }}
+                            {{ with $img }}
+                                {{ $thumb := .Resize "100x" }}
+                                <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">
+                            {{ end }}
+                        {{ end }}
+                    </a>
+                {{ else }}
+                    <div class="photo-nav-placeholder"></div>
+                {{ end }}
+                {{ if lt $index (sub (len $sortedPhotos) 1) }}
+                    {{ $nextPage := index $sortedPhotos (add $index 1) }}
+                    <a href="{{ $nextPage.Permalink }}" class="photo-nav-link next">
+                        <span>Next &rarr;</span>
+                        {{ with $nextPage.Params.image }}
+                            {{ $img := resources.Get . }}
+                            {{ with $img }}
+                                {{ $thumb := .Resize "100x" }}
+                                <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">
+                            {{ end }}
+                        {{ end }}
+                    </a>
+                {{ else }}
+                    <div class="photo-nav-placeholder"></div>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</nav>
+
+<script>
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const fromParam = params.get('from');
+    const [from, term] = fromParam ? fromParam.split(':') : [null, null];
+    
+    const contextNav = document.getElementById('context-nav');
+    const groups = contextNav ? contextNav.querySelectorAll('.context-nav-group') : [];
+    const albumNav = document.querySelector('.album-nav');
+    
+    let showAlbumNav = true;
+    let currentPrevLink = null;
+    let currentNextLink = null;
+    
+    if (from && term) {
+        groups.forEach(group => {
+            const groupTaxo = group.dataset.taxonomy;
+            const groupTerm = group.dataset.term;
+            
+            if (groupTaxo === from && groupTerm === term) {
+                group.style.display = 'block';
+                showAlbumNav = false;
+                
+                const prevLink = group.querySelector('.photo-nav-link.prev');
+                const nextLink = group.querySelector('.photo-nav-link.next');
+                currentPrevLink = prevLink ? prevLink.href : null;
+                currentNextLink = nextLink ? nextLink.href : null;
+            }
+        });
+    }
+    
+    if (showAlbumNav && albumNav) {
+        albumNav.style.display = 'flex';
+        const prevLink = albumNav.querySelector('.photo-nav-link.prev');
+        const nextLink = albumNav.querySelector('.photo-nav-link.next');
+        currentPrevLink = prevLink ? prevLink.href : null;
+        currentNextLink = nextLink ? nextLink.href : null;
+    } else if (albumNav) {
+        albumNav.style.display = 'none';
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox && lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'ArrowLeft' && currentPrevLink) {
+            window.location.href = currentPrevLink;
+        } else if (e.key === 'ArrowRight' && currentNextLink) {
+            window.location.href = currentNextLink;
+        }
+    });
+    
+    // Touch/swipe support for photo detail navigation
+    let touchStartX = 0;
+    document.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    document.addEventListener('touchend', e => {
+        const touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0 && currentNextLink) {
+                window.location.href = currentNextLink;
+            } else if (diff < 0 && currentPrevLink) {
+                window.location.href = currentPrevLink;
+            }
+        }
+    });
+})();
+</script>
+{{ end }}

@@ -1,0 +1,86 @@
+# Photo Gallery Site Configuration (Go build only)
+
+paths:
+  photosDir: "./test_photos"
+  cacheDir: "./cache"
+  outputDir: "./hugo/output"
+
+images:
+  thumbnail:
+    width: 400
+    height: 400
+    quality: 80
+    format: "jpeg"
+    fit: "cover"
+  web:
+    width: 1600
+    height: 0
+    quality: 85
+    format: "jpeg"
+  watermarkThreshold: 1080
+  watermark:
+    text: "© Your Name"
+    opacity: 0.7
+    fontPath: "fonts/AlexBrush-Regular.ttf"
+    position: "bottom-right"
+
+ai:
+  provider: "openai"
+  
+  openai:
+    apiKey: "$OPENAI_API_KEY"
+    model: "gpt-4.1-nano"
+    concurrency: 1
+  
+  ollama:
+    baseURL: "http://localhost:11434"
+    model: "llava"
+  
+  prompt: |
+    Analyze this photo and provide:
+    1. Categories (1 or more comma-separated categories).
+      Here is the list of allowed categories and their definitions:
+      - Portrait: people photos, close-ups of faces
+      - Landscape: Landscapes, vistas, panoramas
+      - Birds: avian photography
+      - Pets: domestic animals
+      - Wildlife: all other animals in their natural habitat
+      - Nature: general nature shots
+      - Architecture: buildings, structures
+      - Urban: city streets, urban scenes
+      - Still Life: arranged objects
+      - Macro: close-up detail shots
+      - Events: parties, weddings, gatherings
+      - Travel: vacation and trip photos
+      - Family: family moments
+      - Food: food photography
+      - Sports: movement, sports, action
+      - Art: artistic, non-representational, artistic expression
+      - Vehicles: cars, bikes, etc.
+      - Aerial: overhead shots
+      - Underwater: water-based photography
+      - Weather: weather-focused shots.
+    2. Tags (2-5 comma-separated keywords that describe objects and actions within the photo).
+       Common Tags are (but are not limited to): winter, summer, spring, fall, snow, sunny, rainy, people, nature, running, etc...
+    3. Dominant colors (foreground, background, subject) (2-3 hex color codes)
+    4. Brief description (1-2 sentences) - if any wild animals are visible, identify them by species type (e.g., "a cardinal", "a mallard duck", "a monarch butterfly").  
+
+    Format your response as:
+    DESCRIPTION: <description>
+    CATEGORY: <category1>, <category2>...
+    TAGS: <tag1>, <tag2>, <tag3>...
+    COLORS: #hexcode1, #hexcode2...
+
+albums:
+  groupBy: ["folder", "ai-category", "date"]
+  minPhotos: 1
+
+hugo:
+  theme: "gallery"
+  flags:
+    - "--minify"
+    - "--gc"
+
+build:
+  cleanCache: false
+  workers: 4

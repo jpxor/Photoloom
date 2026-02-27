@@ -1,0 +1,10 @@
+name = "gallery"
+license = "MIT"
+licenselink = "https://github.com/yourname/gallery/blob/main/LICENSE"
+description = "A clean, minimalist photo gallery theme for Hugo"
+homepage = "https://github.com/yourname/gallery"
+min_version = "0.110.0"
+tags = ["photography", "gallery", "minimalist"]
+[author]
+  name = "Josh Simonot"
+  homepage = "https://example.com"

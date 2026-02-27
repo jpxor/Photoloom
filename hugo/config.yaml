@@ -1,0 +1,13 @@
+title: "My Photo Gallery"
+description: "A beautiful photo gallery"
+baseURL: "https://example.com/"
+author: "Site Author"
+copyright: "© All rights reserved."
+
+theme: "gallery"
+
+taxonomies:
+  category: categories
+  color: colors
+  tag: tags
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="{{ "/" | relURL }}" class="site-logo">{{ .Site.Title }}</a>
+            <ul class="nav-links">
+                <li><a href="{{ "/" | relURL }}">Home</a></li>
+                <li><a href="{{ "albums" | relURL }}">Albums</a></li>
+                <li><a href="{{ "categories" | relURL }}">Categories</a></li>
+                <li><a href="{{ "colors" | relURL }}">Colors</a></li>
+                <li><a href="{{ "tags" | relURL }}">Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+        <p>{{ .Site.Copyright | default .Site.Params.copyright }}</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-info"></div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html>

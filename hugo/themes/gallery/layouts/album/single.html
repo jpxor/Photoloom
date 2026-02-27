@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ $albumSlug := .File.BaseFileName }}
+{{ $photos := where (where .Site.RegularPages "Type" "photo") "Params.album" $albumSlug }}
+<section class="album-header">
+    <div>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p>{{ . }}</p>
+        {{ end }}
+        <span class="photo-count">{{ len $photos }} photos</span>
+    </div>
+    <button class="slideshow-btn" data-taxonomy="album" data-term="{{ $albumSlug | urlize }}" title="View as slideshow">
+        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        Slideshow
+    </button>
+</section>
+
+<section class="photo-grid">
+    {{ range $photos }}
+    <a href="{{ .Permalink }}" class="photo-card" data-taxonomy="album" data-term="{{ $albumSlug | urlize }}" data-permalink="{{ .Permalink }}">
+        {{ with .Params.image }}
+            {{ $img := resources.Get . }}
+            {{ with $img }}
+                {{ $thumb := .Resize "400x webp q80" }}
+                {{ $full := .Resize "1600x webp q85" }}
+                <img src="{{ $thumb.RelPermalink }}" data-full-src="{{ $full.RelPermalink }}" alt="{{ .Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+            {{ end }}
+        {{ end }}
+        <div class="photo-overlay">
+            <span>{{ .Title }}</span>
+            {{ with .Params.category }}
+            <span class="photo-badge category">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.tags }}
+            {{ range first 2 . }}
+            <span class="photo-badge tag">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
+        <span class="photo-slideshow-icon" title="Open in slideshow">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </span>
+    </a>
+    {{ end }}
+</section>
+{{ end }}

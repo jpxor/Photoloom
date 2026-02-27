@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{ $isTag := in .Permalink "/tags/" }}
+{{ $isColor := in .Permalink "/colors/" }}
+<section class="page-header">
+    <h1>
+        {{ if $isTag }}Tags
+        {{ else if $isColor }}Colors
+        {{ else }}Categories{{ end }}
+    </h1>
+    <p>{{ len .Data.Terms }} 
+        {{ if $isTag }}tags
+        {{ else if $isColor }}colors
+        {{ else }}categories{{ end }}
+    </p>
+</section>
+
+{{ if $isTag }}
+{{ if gt (len .Data.Terms) 0 }}
+{{ $maxCount := len (index .Data.Terms.ByCount 0).Pages }}
+<section class="tag-cloud">
+    {{ range .Data.Terms.ByCount }}
+        {{ $count := len .Pages }}
+        {{ $sizeFloat := mul (div (float $count) (float $maxCount)) 2.2 }}
+        {{ $fontSize := add 0.8 $sizeFloat }}
+        <a href="{{ .Page.RelPermalink }}" class="tag-item" style="font-size: {{ $fontSize }}rem">
+            {{ .Page.Title }} <span class="tag-count">({{ $count }})</span>
+        </a>
+    {{ end }}
+</section>
+{{ end }}
+{{ else if $isColor }}
+{{ if gt (len .Data.Terms) 0 }}
+{{ $maxCount := len (index .Data.Terms.ByCount 0).Pages }}
+<section class="color-grid">
+    <div class="grid">
+        {{ range .Data.Terms.ByCount }}
+        <a href="{{ "colors" | relURL }}/{{ .Page.Title | urlize }}" class="color-card">
+            <div class="color-group-gradient">
+                {{ $groupName := .Page.Title }}
+                {{ $groupColors := slice }}
+                {{ range first 4 .Pages }}
+                    {{ $photoColors := .Params.colorGroupColors }}
+                    {{ with $photoColors }}
+                        {{ $color := index $photoColors $groupName }}
+                        {{ if $color }}
+                            {{ $groupColors = $groupColors | append $color }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{ if gt (len $groupColors) 0 }}
+                <div class="gradient-stripes" style="background: linear-gradient(135deg, {{ range $i, $c := $groupColors }}{{ if $i }}, {{ end }}{{ $c }}{{ end }});"></div>
+                {{ end }}
+            </div>
+            <div class="color-info">
+                <span class="color-name">{{ .Page.Title }}</span>
+                <span class="photo-count">{{ len .Pages }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ else }}
+{{ if gt (len .Data.Terms) 0 }}
+<section class="taxonomy-grid">
+    <div class="grid">
+        {{ range .Data.Terms.ByCount }}
+        <a href="{{ .Page.RelPermalink }}" class="taxonomy-card">
+            <div class="taxonomy-cover">
+                {{ $firstPhoto := index .Pages 0 }}
+                {{ with $firstPhoto.Params.image }}
+                    {{ $img := resources.Get . }}
+                    {{ with $img }}
+                        {{ $thumb := .Resize "400x webp q80" }}
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ $.Title }}">
+                    {{ end }}
+                {{ end }}
+            </div>
+            <div class="taxonomy-info">
+                <h3>{{ .Page.Title }}</h3>
+                <span class="photo-count">{{ len .Pages }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

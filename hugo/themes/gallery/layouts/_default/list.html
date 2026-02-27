@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="page-header">
+    <h1>{{ .Title }}</h1>
+</section>
+
+<section class="albums-grid">
+    <div class="grid">
+        {{ range where .Site.RegularPages "Type" "album" }}
+        <a href="{{ .Permalink }}" class="album-card">
+            {{ with .Params.cover }}
+            <div class="album-cover">
+                {{ $coverImage := resources.Get . }}
+                {{ with $coverImage }}
+                    {{ $resized := .Resize "400x webp q80" }}
+                    <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}">
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="album-info">
+                <h3>{{ .Title }}</h3>
+                {{ $albumSlug := lower (replace .Title " " "-") }}
+                {{ $photoCount := len (where (where $.Site.RegularPages "Type" "photo") "Params.album" $albumSlug) }}
+                <span class="photo-count">{{ $photoCount }} photos</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
