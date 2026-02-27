@@ -19,7 +19,7 @@ images:
     format: "jpeg"
   watermarkThreshold: 1080
   watermark:
-    text: "© Your Name"
+    text: "© J.Simonot | E.C.Roy"
     opacity: 0.7
     fontPath: "fonts/AlexBrush-Regular.ttf"
     position: "bottom-right"

@@ -1,8 +1,8 @@
 title: "My Photo Gallery"
 description: "A beautiful photo gallery"
 baseURL: "https://example.com/"
-author: "Site Author"
-copyright: "© All rights reserved."
+author: "Josh Simonot"
+copyright: "© Josh Simonot. All rights reserved."
 
 theme: "gallery"
 
