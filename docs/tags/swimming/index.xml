@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swimming on My Photo Gallery</title>
-    <link>https://example.com/tags/swimming/</link>
+    <link>https://wallust.com/Photoloom/tags/swimming/</link>
     <description>Recent content in Swimming on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Mon, 23 Feb 2026 15:37:09 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/swimming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/tags/swimming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0732</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0732/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0732/</link>
       <pubDate>Mon, 23 Feb 2026 15:37:09 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0732/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0732/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0725</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0725/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0725/</link>
       <pubDate>Mon, 23 Feb 2026 15:33:49 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0725/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0725/</guid>
       <description></description>
     </item>
   </channel>

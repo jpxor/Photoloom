@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Birds on My Photo Gallery</title>
-    <link>https://example.com/tags/birds/</link>
+    <link>https://wallust.com/Photoloom/tags/birds/</link>
     <description>Recent content in Birds on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Sat, 21 Feb 2026 07:35:14 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/birds/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/tags/birds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0490</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0490/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0490/</link>
       <pubDate>Sat, 21 Feb 2026 07:35:14 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0490/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0490/</guid>
       <description></description>
     </item>
     <item>
       <title>turkotrio</title>
-      <link>https://example.com/photos/winter-2025-2026/turkotrio/</link>
+      <link>https://wallust.com/Photoloom/photos/winter-2025-2026/turkotrio/</link>
       <pubDate>Mon, 29 Dec 2025 15:49:47 +0000</pubDate>
-      <guid>https://example.com/photos/winter-2025-2026/turkotrio/</guid>
+      <guid>https://wallust.com/Photoloom/photos/winter-2025-2026/turkotrio/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0015</title>
-      <link>https://example.com/photos/winter-2025-2026/dscn0015/</link>
+      <link>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0015/</link>
       <pubDate>Sat, 27 Dec 2025 16:01:10 +0000</pubDate>
-      <guid>https://example.com/photos/winter-2025-2026/dscn0015/</guid>
+      <guid>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0015/</guid>
       <description></description>
     </item>
   </channel>

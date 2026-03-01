@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Purple on My Photo Gallery</title>
-    <link>https://example.com/colors/purple/</link>
+    <link>https://wallust.com/Photoloom/colors/purple/</link>
     <description>Recent content in Purple on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Sun, 22 Feb 2026 18:27:05 +0000</lastBuildDate>
-    <atom:link href="https://example.com/colors/purple/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/colors/purple/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0696</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0696/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0696/</link>
       <pubDate>Sun, 22 Feb 2026 18:27:05 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0696/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0696/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0525</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0525/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0525/</link>
       <pubDate>Sat, 21 Feb 2026 18:19:00 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0525/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0525/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0523</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0523/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0523/</link>
       <pubDate>Sat, 21 Feb 2026 18:18:24 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0523/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0523/</guid>
       <description></description>
     </item>
   </channel>

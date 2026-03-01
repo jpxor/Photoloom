@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Squirrel on My Photo Gallery</title>
-    <link>https://example.com/tags/squirrel/</link>
+    <link>https://wallust.com/Photoloom/tags/squirrel/</link>
     <description>Recent content in Squirrel on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Mon, 29 Dec 2025 15:46:08 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/squirrel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/tags/squirrel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0104</title>
-      <link>https://example.com/photos/winter-2025-2026/dscn0104/</link>
+      <link>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0104/</link>
       <pubDate>Mon, 29 Dec 2025 15:46:08 +0000</pubDate>
-      <guid>https://example.com/photos/winter-2025-2026/dscn0104/</guid>
+      <guid>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0104/</guid>
       <description></description>
     </item>
     <item>
       <title>squirly</title>
-      <link>https://example.com/photos/winter-2025-2026/squirly/</link>
+      <link>https://wallust.com/Photoloom/photos/winter-2025-2026/squirly/</link>
       <pubDate>Sun, 28 Dec 2025 14:56:34 +0000</pubDate>
-      <guid>https://example.com/photos/winter-2025-2026/squirly/</guid>
+      <guid>https://wallust.com/Photoloom/photos/winter-2025-2026/squirly/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0044</title>
-      <link>https://example.com/photos/winter-2025-2026/dscn0044/</link>
+      <link>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0044/</link>
       <pubDate>Sun, 28 Dec 2025 14:53:25 +0000</pubDate>
-      <guid>https://example.com/photos/winter-2025-2026/dscn0044/</guid>
+      <guid>https://wallust.com/Photoloom/photos/winter-2025-2026/dscn0044/</guid>
       <description></description>
     </item>
   </channel>

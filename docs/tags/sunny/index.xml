@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sunny on My Photo Gallery</title>
-    <link>https://example.com/tags/sunny/</link>
+    <link>https://wallust.com/Photoloom/tags/sunny/</link>
     <description>Recent content in Sunny on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Sun, 22 Feb 2026 14:44:26 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/sunny/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/tags/sunny/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0591</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0591/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0591/</link>
       <pubDate>Sun, 22 Feb 2026 14:44:26 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0591/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0591/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0588</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0588/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0588/</link>
       <pubDate>Sun, 22 Feb 2026 14:43:34 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0588/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0588/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0579</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0579/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0579/</link>
       <pubDate>Sun, 22 Feb 2026 11:35:52 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0579/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0579/</guid>
       <description></description>
     </item>
     <item>
       <title>DSCN0400</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0400/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0400/</link>
       <pubDate>Thu, 19 Feb 2026 09:13:29 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0400/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0400/</guid>
       <description></description>
     </item>
   </channel>

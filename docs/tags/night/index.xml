@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Night on My Photo Gallery</title>
-    <link>https://example.com/tags/night/</link>
+    <link>https://wallust.com/Photoloom/tags/night/</link>
     <description>Recent content in Night on My Photo Gallery</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Josh Simonot. All rights reserved.</copyright>
     <lastBuildDate>Sat, 21 Feb 2026 18:16:26 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/night/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wallust.com/Photoloom/tags/night/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSCN0518</title>
-      <link>https://example.com/photos/san-salvador-bahamas/dscn0518/</link>
+      <link>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0518/</link>
       <pubDate>Sat, 21 Feb 2026 18:16:26 +0000</pubDate>
-      <guid>https://example.com/photos/san-salvador-bahamas/dscn0518/</guid>
+      <guid>https://wallust.com/Photoloom/photos/san-salvador-bahamas/dscn0518/</guid>
       <description></description>
     </item>
   </channel>
