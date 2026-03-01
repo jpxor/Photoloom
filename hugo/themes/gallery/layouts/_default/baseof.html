@@ -12,9 +12,9 @@
 <body>
     <header class="site-header">
         <nav class="site-nav">
-            <a href="{{ "/" | relURL }}" class="site-logo">{{ .Site.Title }}</a>
+            <a href="{{ site.BaseURL | relURL }}" class="site-logo">{{ .Site.Title }}</a>
             <ul class="nav-links">
-                <li><a href="{{ "/" | relURL }}">Home</a></li>
+                <li><a href="{{ site.BaseURL | relURL }}">Home</a></li>
                 <li><a href="{{ "albums" | relURL }}">Albums</a></li>
                 <li><a href="{{ "categories" | relURL }}">Categories</a></li>
                 <li><a href="{{ "colors" | relURL }}">Colors</a></li>
