@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My Photo Gallery</title>
+    <link>https://example.com/categories/</link>
+    <description>Recent content in Categories on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 Feb 2026 17:44:05 +0000</lastBuildDate>
+    <atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Landscape</title>
+      <link>https://example.com/categories/landscape/</link>
+      <pubDate>Mon, 23 Feb 2026 17:44:05 +0000</pubDate>
+      <guid>https://example.com/categories/landscape/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Water Sports</title>
+      <link>https://example.com/categories/water-sports/</link>
+      <pubDate>Mon, 23 Feb 2026 17:44:05 +0000</pubDate>
+      <guid>https://example.com/categories/water-sports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>https://example.com/categories/travel/</link>
+      <pubDate>Mon, 23 Feb 2026 16:52:07 +0000</pubDate>
+      <guid>https://example.com/categories/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Birds</title>
+      <link>https://example.com/categories/birds/</link>
+      <pubDate>Mon, 23 Feb 2026 16:20:00 +0000</pubDate>
+      <guid>https://example.com/categories/birds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nature</title>
+      <link>https://example.com/categories/nature/</link>
+      <pubDate>Mon, 23 Feb 2026 16:20:00 +0000</pubDate>
+      <guid>https://example.com/categories/nature/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wildlife</title>
+      <link>https://example.com/categories/wildlife/</link>
+      <pubDate>Mon, 23 Feb 2026 16:20:00 +0000</pubDate>
+      <guid>https://example.com/categories/wildlife/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://example.com/categories/architecture/</link>
+      <pubDate>Mon, 23 Feb 2026 15:58:25 +0000</pubDate>
+      <guid>https://example.com/categories/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Industrial Equipment</title>
+      <link>https://example.com/categories/industrial-equipment/</link>
+      <pubDate>Mon, 23 Feb 2026 15:55:34 +0000</pubDate>
+      <guid>https://example.com/categories/industrial-equipment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machinery</title>
+      <link>https://example.com/categories/machinery/</link>
+      <pubDate>Mon, 23 Feb 2026 15:55:34 +0000</pubDate>
+      <guid>https://example.com/categories/machinery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pets</title>
+      <link>https://example.com/categories/pets/</link>
+      <pubDate>Mon, 23 Feb 2026 15:52:04 +0000</pubDate>
+      <guid>https://example.com/categories/pets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Urban</title>
+      <link>https://example.com/categories/urban/</link>
+      <pubDate>Mon, 23 Feb 2026 15:51:47 +0000</pubDate>
+      <guid>https://example.com/categories/urban/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Art</title>
+      <link>https://example.com/categories/art/</link>
+      <pubDate>Sun, 22 Feb 2026 18:27:05 +0000</pubDate>
+      <guid>https://example.com/categories/art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Underwater</title>
+      <link>https://example.com/categories/underwater/</link>
+      <pubDate>Sun, 22 Feb 2026 18:05:44 +0000</pubDate>
+      <guid>https://example.com/categories/underwater/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>People</title>
+      <link>https://example.com/categories/people/</link>
+      <pubDate>Sun, 22 Feb 2026 18:00:18 +0000</pubDate>
+      <guid>https://example.com/categories/people/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Still Life</title>
+      <link>https://example.com/categories/still-life/</link>
+      <pubDate>Sun, 22 Feb 2026 17:53:49 +0000</pubDate>
+      <guid>https://example.com/categories/still-life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vehicles</title>
+      <link>https://example.com/categories/vehicles/</link>
+      <pubDate>Sun, 22 Feb 2026 15:06:45 +0000</pubDate>
+      <guid>https://example.com/categories/vehicles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portrait</title>
+      <link>https://example.com/categories/portrait/</link>
+      <pubDate>Sun, 22 Feb 2026 14:43:34 +0000</pubDate>
+      <guid>https://example.com/categories/portrait/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maritime</title>
+      <link>https://example.com/categories/maritime/</link>
+      <pubDate>Sun, 22 Feb 2026 11:36:32 +0000</pubDate>
+      <guid>https://example.com/categories/maritime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macro</title>
+      <link>https://example.com/categories/macro/</link>
+      <pubDate>Thu, 19 Feb 2026 13:33:07 +0000</pubDate>
+      <guid>https://example.com/categories/macro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outdoors</title>
+      <link>https://example.com/categories/outdoors/</link>
+      <pubDate>Sat, 14 Feb 2026 10:21:26 +0000</pubDate>
+      <guid>https://example.com/categories/outdoors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Winter</title>
+      <link>https://example.com/categories/winter/</link>
+      <pubDate>Sat, 14 Feb 2026 10:21:26 +0000</pubDate>
+      <guid>https://example.com/categories/winter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kitchen</title>
+      <link>https://example.com/categories/kitchen/</link>
+      <pubDate>Sat, 03 Jan 2026 13:46:02 +0000</pubDate>
+      <guid>https://example.com/categories/kitchen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Family</title>
+      <link>https://example.com/categories/family/</link>
+      <pubDate>Sat, 03 Jan 2026 13:25:02 +0000</pubDate>
+      <guid>https://example.com/categories/family/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Holiday</title>
+      <link>https://example.com/categories/holiday/</link>
+      <pubDate>Sat, 03 Jan 2026 13:25:02 +0000</pubDate>
+      <guid>https://example.com/categories/holiday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interior</title>
+      <link>https://example.com/categories/interior/</link>
+      <pubDate>Sat, 03 Jan 2026 13:25:02 +0000</pubDate>
+      <guid>https://example.com/categories/interior/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sports</title>
+      <link>https://example.com/categories/sports/</link>
+      <pubDate>Mon, 29 Dec 2025 14:59:50 +0000</pubDate>
+      <guid>https://example.com/categories/sports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weather</title>
+      <link>https://example.com/categories/weather/</link>
+      <pubDate>Mon, 29 Dec 2025 14:59:32 +0000</pubDate>
+      <guid>https://example.com/categories/weather/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outdoor</title>
+      <link>https://example.com/categories/outdoor/</link>
+      <pubDate>Mon, 29 Dec 2025 14:50:38 +0000</pubDate>
+      <guid>https://example.com/categories/outdoor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Close-Up</title>
+      <link>https://example.com/categories/close-up/</link>
+      <pubDate>Sat, 27 Dec 2025 16:09:01 +0000</pubDate>
+      <guid>https://example.com/categories/close-up/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

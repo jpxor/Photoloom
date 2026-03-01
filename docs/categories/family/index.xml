@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Family on My Photo Gallery</title>
+    <link>https://example.com/categories/family/</link>
+    <description>Recent content in Family on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 03 Jan 2026 13:25:02 +0000</lastBuildDate>
+    <atom:link href="https://example.com/categories/family/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0183</title>
+      <link>https://example.com/photos/winter-2025-2026/dscn0183/</link>
+      <pubDate>Sat, 03 Jan 2026 13:25:02 +0000</pubDate>
+      <guid>https://example.com/photos/winter-2025-2026/dscn0183/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

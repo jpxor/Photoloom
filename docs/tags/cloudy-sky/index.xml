@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudy Sky on My Photo Gallery</title>
+    <link>https://example.com/tags/cloudy-sky/</link>
+    <description>Recent content in Cloudy Sky on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 Feb 2026 16:52:07 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/cloudy-sky/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0750</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0750/</link>
+      <pubDate>Mon, 23 Feb 2026 16:52:07 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0750/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0736</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0736/</link>
+      <pubDate>Mon, 23 Feb 2026 15:52:04 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0736/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0735</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0735/</link>
+      <pubDate>Mon, 23 Feb 2026 15:51:47 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0735/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0475</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0475/</link>
+      <pubDate>Thu, 19 Feb 2026 17:05:16 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0475/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0472</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0472/</link>
+      <pubDate>Thu, 19 Feb 2026 17:00:27 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0472/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0080</title>
+      <link>https://example.com/photos/winter-2025-2026/dscn0080/</link>
+      <pubDate>Mon, 29 Dec 2025 15:06:31 +0000</pubDate>
+      <guid>https://example.com/photos/winter-2025-2026/dscn0080/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

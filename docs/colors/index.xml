@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colors on My Photo Gallery</title>
+    <link>https://example.com/colors/</link>
+    <description>Recent content in Colors on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 Feb 2026 17:44:05 +0000</lastBuildDate>
+    <atom:link href="https://example.com/colors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue</title>
+      <link>https://example.com/colors/blue/</link>
+      <pubDate>Mon, 23 Feb 2026 17:44:05 +0000</pubDate>
+      <guid>https://example.com/colors/blue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brown</title>
+      <link>https://example.com/colors/brown/</link>
+      <pubDate>Mon, 23 Feb 2026 17:44:05 +0000</pubDate>
+      <guid>https://example.com/colors/brown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyan</title>
+      <link>https://example.com/colors/cyan/</link>
+      <pubDate>Mon, 23 Feb 2026 17:44:05 +0000</pubDate>
+      <guid>https://example.com/colors/cyan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gray</title>
+      <link>https://example.com/colors/gray/</link>
+      <pubDate>Mon, 23 Feb 2026 16:52:07 +0000</pubDate>
+      <guid>https://example.com/colors/gray/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>White</title>
+      <link>https://example.com/colors/white/</link>
+      <pubDate>Mon, 23 Feb 2026 16:20:00 +0000</pubDate>
+      <guid>https://example.com/colors/white/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Green</title>
+      <link>https://example.com/colors/green/</link>
+      <pubDate>Mon, 23 Feb 2026 15:58:25 +0000</pubDate>
+      <guid>https://example.com/colors/green/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orange</title>
+      <link>https://example.com/colors/orange/</link>
+      <pubDate>Mon, 23 Feb 2026 15:51:47 +0000</pubDate>
+      <guid>https://example.com/colors/orange/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Black</title>
+      <link>https://example.com/colors/black/</link>
+      <pubDate>Mon, 23 Feb 2026 15:34:36 +0000</pubDate>
+      <guid>https://example.com/colors/black/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pink</title>
+      <link>https://example.com/colors/pink/</link>
+      <pubDate>Sun, 22 Feb 2026 18:27:05 +0000</pubDate>
+      <guid>https://example.com/colors/pink/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Purple</title>
+      <link>https://example.com/colors/purple/</link>
+      <pubDate>Sun, 22 Feb 2026 18:27:05 +0000</pubDate>
+      <guid>https://example.com/colors/purple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yellow</title>
+      <link>https://example.com/colors/yellow/</link>
+      <pubDate>Sun, 22 Feb 2026 18:00:18 +0000</pubDate>
+      <guid>https://example.com/colors/yellow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red</title>
+      <link>https://example.com/colors/red/</link>
+      <pubDate>Sun, 22 Feb 2026 11:21:37 +0000</pubDate>
+      <guid>https://example.com/colors/red/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

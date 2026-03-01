@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sea Urchins on My Photo Gallery</title>
+    <link>https://example.com/tags/sea-urchins/</link>
+    <description>Recent content in Sea Urchins on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Feb 2026 18:05:44 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/sea-urchins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0679</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0679/</link>
+      <pubDate>Sun, 22 Feb 2026 18:05:44 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0679/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0678</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0678/</link>
+      <pubDate>Sun, 22 Feb 2026 18:05:35 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0678/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

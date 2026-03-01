@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Branch on My Photo Gallery</title>
+    <link>https://example.com/tags/branch/</link>
+    <description>Recent content in Branch on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Feb 2026 10:58:43 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/branch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0563</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0563/</link>
+      <pubDate>Sun, 22 Feb 2026 10:58:43 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0563/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0495</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0495/</link>
+      <pubDate>Sat, 21 Feb 2026 07:37:38 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0495/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0478</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0478/</link>
+      <pubDate>Sat, 21 Feb 2026 07:28:56 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0478/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0437</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0437/</link>
+      <pubDate>Thu, 19 Feb 2026 09:29:00 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0437/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0436</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0436/</link>
+      <pubDate>Thu, 19 Feb 2026 09:28:55 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0436/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0402</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0402/</link>
+      <pubDate>Thu, 19 Feb 2026 09:13:42 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0402/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0400</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0400/</link>
+      <pubDate>Thu, 19 Feb 2026 09:13:29 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0400/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0393</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0393/</link>
+      <pubDate>Thu, 19 Feb 2026 08:24:33 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0393/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

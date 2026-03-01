@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Person on My Photo Gallery</title>
+    <link>https://example.com/tags/person/</link>
+    <description>Recent content in Person on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 Feb 2026 15:52:04 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/person/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0736</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0736/</link>
+      <pubDate>Mon, 23 Feb 2026 15:52:04 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0736/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0671</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0671/</link>
+      <pubDate>Sun, 22 Feb 2026 18:00:18 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0671/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0538</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0538/</link>
+      <pubDate>Sun, 22 Feb 2026 10:26:11 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0538/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

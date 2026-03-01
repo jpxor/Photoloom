@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bright Sky on My Photo Gallery</title>
+    <link>https://example.com/tags/bright-sky/</link>
+    <description>Recent content in Bright Sky on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Feb 2026 11:21:29 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/bright-sky/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0572</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0572/</link>
+      <pubDate>Sun, 22 Feb 2026 11:21:29 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0572/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCN0564</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0564/</link>
+      <pubDate>Sun, 22 Feb 2026 11:00:20 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0564/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

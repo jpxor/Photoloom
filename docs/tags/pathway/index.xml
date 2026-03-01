@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pathway on My Photo Gallery</title>
+    <link>https://example.com/tags/pathway/</link>
+    <description>Recent content in Pathway on My Photo Gallery</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Josh Simonot. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 21 Feb 2026 18:16:26 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/pathway/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCN0518</title>
+      <link>https://example.com/photos/san-salvador-bahamas/dscn0518/</link>
+      <pubDate>Sat, 21 Feb 2026 18:16:26 +0000</pubDate>
+      <guid>https://example.com/photos/san-salvador-bahamas/dscn0518/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
