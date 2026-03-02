@@ -10,7 +10,7 @@ The initial 'one-shot' from detailed spec was impressive, but as the project got
 
 ### Future
 If this project is to continue, it needs to be restructured to break this into multiple independent components:
-1. Metadata extractor: use AI vision capabilities for automatic categories, tags, colors, (and existing tools for EXIF), to be saved in an open intermediate format.
+1. Metadata extractor: use AI vision capabilities for automatic categories, tags, colors, (and existing tools for EXIF), to be saved in an open intermediate format. (write metadata data right into the photo file?)
 2. Static site **content** generator: consumes the intermediate format (photo and photo metadata) and produces the required content for a static site generator to consume. Ie. Write out all the `hugo/content` frontmatter for the photos. This is to be bundled with:
 3. A 'theme' or 'module' for a static site generator that properly uses the content as produced. The theme could be minimal, to allow easy extension/styling by end user or theme creators, or a complete ready-made theme.
 4. An easy to use, "1-click" UI for `photos directory` to `hosted photo gallery website`
