@@ -1,5 +1,28 @@
 # Photoloom
 
+### Project goals
+- quickly get Minimal Viable Product (MVP) for 'photos' --> 'freely-hosted static-site' pipeline
+- use multimodel LLMs to inspect and extract data from photos
+- test and become familiar with current LLM agent capablities
+
+### Version 0, vibe-coded mvp
+The initial 'one-shot' from detailed spec was impressive, but as the project got a little bigger and a little more complicated, each small change and fix from the LLM agent caused regressions, and then it started to fail to implement fixes and features.  It built a tangled mess. I had to instruct the LLM agent to refactor the go code. The hugo theme templating is still a mess.
+
+### Future
+If this project is to continue, it needs to be restructured to break this into multiple independent components:
+1. Metadata extractor: use AI vision capabilities for automatic categories, tags, colors, (and existing tools for EXIF), to be saved in an open intermediate format.
+2. Static site **content** generator: consumes the intermediate format (photo and photo metadata) and produces the required content for a static site generator to consume. Ie. Write out all the `hugo/content` frontmatter for the photos. This is to be bundled with:
+3. A 'theme' or 'module' for a static site generator that properly uses the content as produced. The theme could be minimal, to allow easy extension/styling by end user or theme creators, or a complete ready-made theme.
+4. An easy to use, "1-click" UI for `photos directory` to `hosted photo gallery website`
+
+A content generator and theme could exist for any static site builder.
+
+LLM Generated README follows.
+
+---
+
+# Photoloom
+
 Weave your photos into stunning galleries with AI-powered automation.
 
 ## What is Photoloom?
